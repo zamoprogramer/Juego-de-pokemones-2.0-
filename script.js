@@ -2,10 +2,19 @@ let victoriasJugador = 0;
 let victoriasComputadora = 0;
 
 function jugar(eleccionJugador){
-    let opciones = ["Pokemon piedra", "Pokemon papel", "Pokemon tijera"];
-    let eleccionComputadora = opciones [Math.floor(Math.random()*3)];
+    let opciones = ["Pokemon piedra", "Pokemon papel", "Pokemon tijera","Pokemon fuego","Pokemon electrico" , "Pokemon agua"];
+    let eleccionComputadora = opciones [Math.floor(Math.random()*opciones.length)];
 
     let resultado ="";
+
+    let reglas = {
+        "Pokemon piedra": ["Pokemon tijera", "Pokemon fuego"], 
+        "Pokemon papel": ["Pokemon piedra", "Pokemon agua"],
+        "Pokemon tijera": ["Pokemon papel","Pokemon tijera"],
+        "Pokemon fuego": ["Pokemon papel" , "Pokemon tijera"],
+        "Pokemon agua": ["Pokemon piedra", "Pokemon fuego"],
+        "Pokemon electrico" : ["Pokemon papel", "Pokemon piedra "]
+    }; 
 
     if (eleccionJugador === eleccionComputadora){
         resultado = "🤝 ¡Empate ✌🏼  ! Ambos eligieron  " + eleccionJugador + "Vamos otra vez";

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> Juego  Pokemon </h1>
+    <p>Elige tu  Pokemon !</p>
+
+        
+    <div class="botones"> 
+        <button onclick="jugar('Pokemon piedra')" class="btn">
+            <img src="imagenes/piedra.jpg" alt="Piedra"> 
+            <p>Pokemon Piedra</p>   
+        </button>
+
+        <button onclick="jugar('Pokemon papel')" class="btn">
+            <img src="imagenes/papel.jpg" alt="Papel">
+            <p>Pokemon Papel</p>
+        </button>
+
+        <button onclick="jugar('Pokemon tijera')" class="btn">
+            <img src="imagenes/tijera.jpg" alt="Tijera">
+            <p>Pokemon Tijera</p>
+        </button>
+
+        <button onclick="jugar('Pokemon fuego')" class="btn">
+            <img src="imagenes/fuego.jpg" alt="Fuego">
+            <p>Pokemon Fuego</p>
+
+        <button onclick="jugar('Pokemon agua')" class="btn">
+            <img src="imagenes/agua.jpg" alt="Agua">
+            <p>Pokemon Agua</p>
+
+        <button onclick="jugar('Pokemon electrico')" class="btn">
+            <img src="imagenes/electrico.jpg" alt="Electrico">
+            <p>Pokemon Electrico</p>
+
+    </div>
+
+    <h2 id="resultado">Esperando tu elección...</h2>
+
+    <p>Jugador: <span id="puntos-jugador">0</span></p>
+    <p>Computadora: <span id="puntos-computadora">0</span></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
