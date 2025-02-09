@@ -1,5 +1,6 @@
 h1{
     color: #C2AE4B
+
 }
 p{
     color: #2E290E;
@@ -12,7 +13,7 @@ body {
 
  }
 
- .container {
+ .container {   
     padding:20px
     border-radius:20px;
  }
@@ -32,6 +33,7 @@ body {
     border-radius: 80px;
     background-color:#3B8274;
     color: #C2AE4B;
+    display: flex;
  }
 
  .botones {
@@ -46,6 +48,11 @@ body {
     padding: 10px;
 }
 
+
+.container{
+   width: 100px;
+}
+
 .opcion img {
     width: 100px;
     cursor: pointer;
@@ -54,3 +61,12 @@ body {
     transition: all 0.3s ease;
 }
 
+@media (max-width: 480px){
+   .pokemon-list{
+      flex-direction: column;
+      align-items: center;
+   }
+ .pokemon-item{
+   width: 80%;
+ }
+}
